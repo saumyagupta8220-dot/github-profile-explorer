@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Profile Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="main-title">
+     <pre>
+█▀▀ █ ▀█▀   █░█ █░█ █▄▄
+█▄█ █ ░█░   █▀█ █▄█ █▄█
+     </pre>
+</h1>
+
+<div class="search-box">
+  <input type="text" id="username" placeholder="Enter GitHub username">
+  <button id="searchBtn">Search</button>
+</div>
+
+    <!-- Loading -->
+    <p id="loading" class="hidden">Loading...</p>
+
+    <!-- Error -->
+    <p id="error" class="error hidden"></p>
+
+    <!-- Profile Section -->
+    <div id="profile" class="profile hidden"></div>
+
+    <!-- Repositories -->
+    <h2 id="repoTitle" class="hidden">Repositories</h2>
+    <div id="repos" class="repo-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
